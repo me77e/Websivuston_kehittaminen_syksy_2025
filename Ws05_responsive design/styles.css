@@ -136,17 +136,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
   
-  @media (max-width: 600px) {
-    .responsive-box {
-      background-color: rgb(146, 100, 219);
-    }
-  }
-  
-  @media (min-width: 601px) {
-    .responsive-box {
-      background-color: beige;
-    }
-  }
+
   footer {
   background-color: grey;
   color: black;
@@ -177,24 +167,24 @@ input[type="submit"]:hover {
       padding: 20px;
       text-align: center;
     }
-    
+     
     @media (max-width: 600px) {
       .media-query-box {
         background-color: lightcoral;
       }
-    }
+    } 
     
     @media (min-width: 601px) {
       .media-query-box {
         background-color: lightblue;
-      }
+      } 
     }
-    .responsive-nav .nav-list {
+.responsive-nav .nav-list {
       display: flex;
       list-style: none;
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       .responsive-nav .nav-list {
         display: none;
       }
