@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minun ensimmäinen HTML sivu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Koti</a></li>
+        <li><a href="#">Tietoa</a></li>
+        <li><a href="#">Yhteydenotto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 style="color: black">Mette Holmström</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Tietoa minusta</a></li>
+          <li><a href="#services">Palvelut</a></li>
+          <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <p>
+          Hei! Minun nimeni on Mette. Harjoittelen HTML:n tekemistä. Tämä on
+          ensimmäinen verkkosivuni!
+        </p>
+        <img
+          src="images/oma_kuva.jpg"
+          alt="A photo of Mette"
+          width="200"
+          class="filter-image"
+        />
+      </section>
+    </main>
+    <section id="harrastukset">
+      <h2>Minun harrastukset</h2>
+      <h3>Vapaa-ajallani teen</h3>
+      <ol>
+        <li>Valmennan jalkapalloa</li>
+        <li>luen kirjoja</li>
+        <li>Liikun luonnossa</li>
+      </ol>
+
+      <h3>Harrastukseni</h3>
+      <ul class="pseudo-list">
+        <li>Sisustaminen</li>
+        <li>Salitreeni</li>
+        <li>Juokseminen</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Minun lempisivuni</h2>
+      <p>
+        Katso lempisivuni:
+        <a href="https://www.instagram.com/interiorbymette/" target="_blank"
+          >Interiorbymette</a
+        >
+      </p>
+    </section>
+    <h2>Käynnissä olevat kurssini</h2>
+    <table>
+      <tr>
+        <td>Websivuston kehittäminen</td>
+        <td>Jari Kovalainen</td>
+      </tr>
+      <tr>
+        <td>Liiketoimintaympäristö</td>
+        <td>Petri Oikkonen</td>
+      </tr>
+      <tr>
+        <td>Professional Communication in English</td>
+        <td>Niina Kovalainen</td>
+      </tr>
+    </table>
+    <h2>Flexbox-asettelu</h2>
+    <div class="flex-container">
+      <div class="box">Laatikko 1</div>
+      <div class="box">Laatikko 2</div>
+      <div class="box">Laatikko 3</div>
+    </div>
+    <section>
+      <h2>Ruudukkoasettelu</h2>
+      <div class="responsive-container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
+      <div class="responsive-box">Mediakysely</div>
+    </section>
+    <div class="media-query-box">Laatikko</div>
+    <section>
+      <h2>Responsiivinen kuva</h2>
+      <img
+        src="images/pallo_kuva.jpg"
+        alt="pallo_kuva"
+        class="responsive-image"
+      />
+    </section>
+    <section id="contact">
+      <h2>Ota yhteyttä</h2>
+      <form>
+        <label for="name">Mette Holmström:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">mette.holmstrom@student.laurea.fi:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <input type="submit" value="Submit" />
+        <button class="transition-button">Hover me</button>
+        <div class="animation-box"></div>
+      </form>
+    </section>
+    <blockquote class="quote">This is a sample quote.</blockquote>
+    <footer>
+      <p>2025 Mette Holmström</p>
+    </footer>
+  </body>
+</html>
