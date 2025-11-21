@@ -21,7 +21,14 @@ table {
 th {
     background-color: gray; 
 }
-
+.header-content {
+    display: flex;         
+    align-items: center;     
+    gap: 20px;               
+}
+.header-content img {
+    border-radius: 50%;  
+}
 
 
 
