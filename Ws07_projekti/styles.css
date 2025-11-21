@@ -80,9 +80,13 @@ th {
     border-radius: 50%; 
     flex-shrink: 0;    
 }
-    .intro-text {
-        max-width: 90%;
-    }
+.intro-text {
+    max-width: 600px;     
+    line-height: 1.6;   
+    margin: 0;
+    text-align: justify;  
+    text-justify: inter-word; 
+}
 
 
 
