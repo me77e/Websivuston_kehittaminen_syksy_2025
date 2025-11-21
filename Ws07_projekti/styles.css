@@ -12,10 +12,10 @@ table {
     margin-bottom: 20px;       
 }
 
-th, td {
-    border: 1px solid #ddd; 
-    padding: 8px;
+.main-title {
     text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
 }
 
 th {
