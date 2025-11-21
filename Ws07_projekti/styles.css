@@ -48,7 +48,24 @@ th {
     }
 }
 
+.main-nav ul {
+    list-style: none;  
+    padding: 0;
+    margin: 10px 0 20px 0; 
+    display: flex;        
+    gap: 30px;            
+}
 
+.main-nav a {
+    text-decoration: none; 
+    color: #333;         
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #0a0a0a;   
+}
 
 
 
