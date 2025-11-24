@@ -27,12 +27,12 @@ table {
 }
 
 .header-content {
-    display: flex;         
-    align-items: column; 
-    align-items: center; 
-    text-align: center;  
-    gap: 20px;
+    display: flex;        
+    align-items: center;      
+    justify-content: center;   
+    gap: 30px;                 
     margin-top: 20px;
+    flex-wrap: wrap;          
 }
 
 .profile-img {
@@ -47,7 +47,7 @@ table {
     max-width: 500px;
     line-height: 1.6;
     margin: 0 auto;   
-    text-align: center;  
+    text-align: left;  
 }
 
 .main-nav ul {
