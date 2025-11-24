@@ -6,14 +6,17 @@ body {
     margin: 0;
 }
 
-
-.logo-img {
+.video-logo-container {
     width: 150px; 
-    height: auto;
-    display: block;
     margin: 0 auto 20px auto;
+    overflow: hidden;
 }
 
+.video-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .main-title {
     font-size: 50px;
