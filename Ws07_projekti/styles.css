@@ -97,3 +97,21 @@ footer {
         text-align: center; 
     }
 }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;       
+    max-width: 400px; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
