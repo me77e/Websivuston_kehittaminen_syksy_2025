@@ -32,7 +32,7 @@ body {
     margin: 10px 0 20px 0;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .main-nav a {
