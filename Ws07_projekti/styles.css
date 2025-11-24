@@ -3,6 +3,10 @@ body {
     font-family: "Times New Roman", Times, serif;
     padding: 20px;
 }
+.logo-img {
+    width: 50px; 
+    height: auto;
+}
 
 .main-title {
     font-size: 80px;
