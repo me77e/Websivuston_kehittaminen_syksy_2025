@@ -36,10 +36,10 @@ table {
 }
 
 .profile-img {
-    width: 200px;
+    width: 220px;
     height: auto;
     border-radius: 50%;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 
@@ -47,7 +47,7 @@ table {
     max-width: 650px;
     line-height: 1.6;
     margin: 0 auto;   
-    text-align: center;  
+    /* text-align: center;   */
 }
 
 .main-nav ul {
