@@ -9,7 +9,7 @@ body {
 /* Header ja logo */
 .header {
     position: relative; /* Tarvitaan absolute-kuvalle */
-    padding-top: 20px; /* Tilaa top-left-kuvalle pienellä marginilla */
+    padding-top: 20px; /* Tilaa top-left-kuvalle */
 }
 
 .logo-img {
@@ -154,10 +154,45 @@ footer {
     width: 100%;
 }
 
-/* Media Queries – responsiivisuus */
+/* Kolmen kuvan vaakarivi */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.bedroom-img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.bedroom-img:hover {
+    transform: scale(1.05);
+}
+
+/* Single image keskitys */
+.single-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.single-image img {
+    width: 350px;
+    height: auto;
+}
+
+/* Responsiivisuus */
 @media (max-width: 1024px) {
     .top-left-img {
-        width: 150px; /* pienempi kuva tabletilla */
+        width: 150px;
     }
 }
 
@@ -181,61 +216,38 @@ footer {
     }
 
     .top-left-img {
-        width: 120px; /* vielä pienempi puhelimessa */
+        width: 120px;
     }
 
     .logo-img {
-        width: 250px; /* logo pienempi puhelimessa */
+        width: 250px;
     }
 
     .main-title {
-        font-size: 35px; /* otsikko pienempi */
+        font-size: 35px;
     }
 
     .main-nav a {
-        font-size: 24px; /* nav-link pienempi */
+        font-size: 24px;
     }
-}
-.bedroom-img {
-    width: 250px;       /* kuvan leveys */
-    height: auto;       /* säilyttää kuvasuhteen */
-    border-radius: 10px; /* pyöristetyt reunat */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* varjo */
-    transition: transform 0.3s; /* hover-efekti */
-}
 
-.bedroom-img:hover {
-    transform: scale(1.05); /* hiiren päälle suurennus */
-}
-
-/* Responsiivisuus pienemmille näytöille */
-@media (max-width: 768px) {
+    /* Kuvien skaalaus pienillä näytöillä */
     .bedroom-img {
-        width: 90%; /* kuvista tulee leveämpi, mutta pysyvät yksitellen */
+        width: 90%;
+        height: auto;
         margin-bottom: 15px;
     }
 
-    .d-flex.justify-content-center {
+    .image-row {
         flex-direction: column;
         align-items: center;
     }
-}
-.single-image {
-  display: flex;
-  justify-content: center; /* vaakakeskitys */
-  margin: 20px 0;
+
+    .single-image img {
+        width: 90%;
+    }
 }
 
-.single-image img {
-  width: 600px;  /* haluttu leveys */
-  height: auto;  /* säilyttää kuvasuhteen */
-}
-@media (max-width: 768px) {
-    .single-image img }
-    width: 90%; 
-{
-
-}
 
 
 
