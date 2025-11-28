@@ -1,16 +1,36 @@
-
+/* Yleiset tyylit */
 body {
     background-color: gray;
     font-family: "Times New Roman", Times, serif;
     padding: 20px;
     margin: 0;
 }
+
+/* Header ja logo */
+.header {
+    position: relative; /* Tarvitaan absolute-kuvalle */
+    padding-top: 20px; /* Tilaa top-left-kuvalle pienellä marginilla */
+}
+
 .logo-img {
     width: 400px; 
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
 }
+
+/* Omakuva vasemmassa yläkulmassa */
+.top-left-img {
+    position: absolute;
+    top: 10px;     
+    left: 10px;   
+    width: 200px;  
+    height: auto;
+    z-index: 10;  
+    border-radius: 10px; 
+}
+
+/* Otsikko ja alaotsikko */
 .main-title {
     font-size: 50px;
     text-align: center;
@@ -25,7 +45,7 @@ body {
     margin: 0 0 20px 0;
 }
 
-
+/* Navigaatio */
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -47,7 +67,7 @@ body {
     color: #0a0a0a;
 }
 
-
+/* Hakulomake */
 .search-form {
     max-width: 280px;
     margin: 0 auto 40px auto;
@@ -80,7 +100,7 @@ body {
     color: #fff;
 }
 
-
+/* Sisältö */
 .header-content {
     max-width: 800px;
     margin: 20px auto;
@@ -88,7 +108,7 @@ body {
     line-height: 1.6;
 }
 
-
+/* Yhteystietolomake */
 form.contact-form {
     display: flex;
     flex-direction: column;
@@ -114,7 +134,7 @@ label {
     font-weight: bold;
 }
 
-
+/* Taulukko */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -125,7 +145,7 @@ th {
     background-color: gray;
 }
 
-
+/* Footer */
 footer {
     background-color: grey;
     color: black;
@@ -134,6 +154,12 @@ footer {
     width: 100%;
 }
 
+/* Media Queries – responsiivisuus */
+@media (max-width: 1024px) {
+    .top-left-img {
+        width: 150px; /* pienempi kuva tabletilla */
+    }
+}
 
 @media (max-width: 768px) {
     .main-nav ul {
@@ -152,21 +178,24 @@ footer {
 
     form.contact-form {
         max-width: 90%;
-    } 
+    }
+
+    .top-left-img {
+        width: 120px; /* vielä pienempi puhelimessa */
+    }
+
+    .logo-img {
+        width: 250px; /* logo pienempi puhelimessa */
+    }
+
+    .main-title {
+        font-size: 35px; /* otsikko pienempi */
+    }
+
+    .main-nav a {
+        font-size: 24px; /* nav-link pienempi */
+    }
 }
 
-
-.header {
-    position: relative; 
-}
-
-.top-left-img {
-    position: absolute;
-    top: 10px;     
-    left: 10px;   
-    width: 250px;  
-    z-index: 10;  
-    border-radius: 10px; 
-}
 
 
