@@ -1,4 +1,4 @@
-/* Yleiset tyylit */
+/* Perusbody */
 body {
     background-color: gray;
     font-family: "Times New Roman", Times, serif;
@@ -6,41 +6,45 @@ body {
     margin: 0;
 }
 
-/* Header ja logo */
+/* Header asettelu gridillä */
 .header {
-    position: relative; /* Tarvitaan absolute-kuvalle */
-    padding-top: 20px; /* Tilaa top-left-kuvalle pienellä marginilla */
+    display: grid;
+    grid-template-columns: auto 1fr; /* Vasemman reunan kuva + muu sisältö */
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 10px 20px;
 }
 
+/* Logo */
 .logo-img {
     width: 400px; 
     height: auto;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
 }
 
-/* Omakuva vasemmassa yläkulmassa */
+/* Omakuvan kuva */
 .top-left-img {
-    position: absolute;
-    top: 10px;     
-    left: 10px;   
-    width: 200px;  
+    width: 120px;        /* Pieni kuvake vasempaan */
     height: auto;
-    z-index: 10;  
-    border-radius: 10px; 
+    border-radius: 10px;
+    display: block;
 }
 
-/* Otsikko ja alaotsikko */
+/* Pääotsikko ja alaotsikko */
+.title-container {
+    text-align: center;
+}
+
 .main-title {
     font-size: 50px;
-    text-align: center;
     margin: 0 0 10px 0;
 }
 
 .subtitle {
     font-size: 1.1rem;
     color: #0e0d0d;
-    text-align: center;
     font-style: italic;
     margin: 0 0 20px 0;
 }
@@ -100,7 +104,7 @@ body {
     color: #fff;
 }
 
-/* Sisältö */
+/* Header content */
 .header-content {
     max-width: 800px;
     margin: 20px auto;
@@ -108,7 +112,7 @@ body {
     line-height: 1.6;
 }
 
-/* Yhteystietolomake */
+/* Yhteystiedot */
 form.contact-form {
     display: flex;
     flex-direction: column;
@@ -154,48 +158,46 @@ footer {
     width: 100%;
 }
 
-/* Media Queries – responsiivisuus */
-@media (max-width: 1024px) {
+/* Responsiivisuus */
+@media (max-width: 1200px) {
     .top-left-img {
-        width: 150px; /* pienempi kuva tabletilla */
+        width: 100px;
+    }
+    .logo-img {
+        width: 300px;
     }
 }
 
 @media (max-width: 768px) {
-    .main-nav ul {
-        flex-direction: column;
+    .header {
+        grid-template-columns: 1fr; /* yksi sarake mobiilissa */
+        text-align: center;
         gap: 10px;
     }
 
-    .header-content {
-        max-width: 90%;
-        margin-top: 15px;
-    }
-
-    .search-form {
-        max-width: 90%;
-    }
-
-    form.contact-form {
-        max-width: 90%;
-    }
-
     .top-left-img {
-        width: 120px; /* vielä pienempi puhelimessa */
+        margin: 0 auto;
+        width: 80px;
     }
 
     .logo-img {
-        width: 250px; /* logo pienempi puhelimessa */
+        width: 250px;
+        margin: 0 auto;
     }
 
     .main-title {
-        font-size: 35px; /* otsikko pienempi */
+        font-size: 35px;
     }
 
     .main-nav a {
-        font-size: 24px; /* nav-link pienempi */
+        font-size: 24px;
+    }
+
+    .search-form, form.contact-form {
+        max-width: 90%;
     }
 }
+
 
 
 
