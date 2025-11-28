@@ -197,7 +197,7 @@ footer {
     }
 }
 .bedroom-img {
-    width: 300px;       /* kuvan leveys */
+    width: 250px;       /* kuvan leveys */
     height: auto;       /* säilyttää kuvasuhteen */
     border-radius: 10px; /* pyöristetyt reunat */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* varjo */
@@ -220,6 +220,26 @@ footer {
         align-items: center;
     }
 }
+.single-image {
+  display: flex;
+  justify-content: center; /* vaakakeskitys */
+  margin: 20px 0;
+}
+
+.single-image img {
+  width: 600px;  /* haluttu leveys */
+  height: auto;  /* säilyttää kuvasuhteen */
+}
+@media (max-width: 768px) {
+    .single-image img }
+    width: 90%; 
+{
+
+}
+
+
+
+
 
 
 
