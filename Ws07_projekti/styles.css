@@ -196,6 +196,30 @@ footer {
         font-size: 24px; /* nav-link pienempi */
     }
 }
+.bedroom-img {
+    width: 300px;       /* kuvan leveys */
+    height: auto;       /* säilyttää kuvasuhteen */
+    border-radius: 10px; /* pyöristetyt reunat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* varjo */
+    transition: transform 0.3s; /* hover-efekti */
+}
+
+.bedroom-img:hover {
+    transform: scale(1.05); /* hiiren päälle suurennus */
+}
+
+/* Responsiivisuus pienemmille näytöille */
+@media (max-width: 768px) {
+    .bedroom-img {
+        width: 90%; /* kuvista tulee leveämpi, mutta pysyvät yksitellen */
+        margin-bottom: 15px;
+    }
+
+    .d-flex.justify-content-center {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
