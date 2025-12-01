@@ -251,7 +251,13 @@ footer {
 .single2-image .bedroom-img {
     width: 500px;
     height: 400px;
+    justify-items: left;
     
+}
+.single2-image .image-text {
+    max-width: 400px;    /* valinnainen */
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 
