@@ -1,6 +1,6 @@
 /* Yleiset tyylit */
 body {
-    background-color: gray;
+    background-color: rgb(192, 187, 187);
     font-family: "Times New Roman", Times, serif;
     padding: 20px;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 .logo-img {
-    width: 400px; 
+    width: 300px; 
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
