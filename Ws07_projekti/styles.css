@@ -32,16 +32,16 @@ body {
 
 /* Otsikko ja alaotsikko */
 .main-title {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     margin: 0 0 10px 0;
 }
 
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #0e0d0d;
     text-align: center;
-    font-style: italic;
+    font-style: "times New Roman";
     margin: 0 0 20px 0;
 }
 
@@ -184,10 +184,11 @@ footer {
     margin: 20px 0;
 }
 
-.single-image img {
-    width: 350px;
-    height: auto;
+.single-image .bedroom-img {
+    width: 250px;
+    height: 200px;
 }
+
 
 /* Responsiivisuus */
 @media (max-width: 1024px) {
