@@ -1,83 +1,58 @@
 <!DOCTYPE html>
 <html lang="fi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InteriorByMette</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
- <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <header class="header">
-  <img src="images/omakuva.jpg" class="top-left-img" alt="Mette" width="200">
-  
-  <div class="logo-container mb-3 text-center">
-    <img src="images/logo.jpg" alt="Logo" class="logo-img" />
-  </div>
+    <!-- <img src="images/omakuva.jpg" class="top-left-img" alt="Mette"> -->
+    <img src="images/logo.jpg" alt="Logo" class="logo-img">
 
-  <div class="title-container text-center mb-3">
-    <h4 class="main-title">Mette Holmström</h4>
-    <p class="subtitle">Ammattistailaaja / Professional Stylist
-    </p>
-  </div>
+    <h1 class="main-title">Mette Holmström</h1>
+    <p class="subtitle">Ammattistailaaja / Professional Stylist</p>
 
-  <nav class="main-nav mb-3">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="Palvelut.html">Palvelut</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Referenssit.html">Referenssit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Otayhteytta.html">Ota yhteyttä</a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="Palvelut.html">Palvelut</a></li>
+            <li><a href="Referenssit.html">Referenssit</a></li>
+            <li><a href="Otayhteytta.html">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
 
-  <form class="search-form mx-auto mb-4" role="search">
-    <input class="form-control" type="search" placeholder="Hae" aria-label="Search" />
-    <button class="btn btn-outline-success mt-2 w-100" type="submit">Hae</button>
-  </form>
+    <form class="search-form" role="search">
+        <input type="search" placeholder="Hae" aria-label="Search">
+        <button type="submit">Hae</button>
+    </form>
 </header>
-    <div class="header-content text-center mb-5">
-      <p class="intro-text">
-        Olen kodin ammattistailaaja, jonka intohimona on luoda visuaalisesti
-        harmonisia ja lämpimiä tiloja asiakkaan toiveet ja tarpeet aidosti
-        huomioiden. Nautin kodin muutostöistä ja inspiroidun jatkuvasti uusista
-        ideoista sekä erilaisista visuaalisista kokonaisuuksista. Tavoitteeni on
-        tuoda esiin kodin parhaat puolet ja luoda ympäristö, jossa on hyvä olla.
+
+<main>
+  <section class="about-hero">
+    <img src="images/omakuva.jpg" class="about-img" alt="Mette Holmström">
+    <div class="about-text">
+      <h2>Kuka Mette on?</h2>
+      <p>
+        Olen Mette Holmström, intohimoinen sisustamisen ja stailauksen ammattilainen. Vuonna 2024 valmistuin Ammattistailaajaksi, ja koulutukseni sisälsi monipuolisesti sisustuksen ja stailauksen eri osa-alueita: väriopin ja sommittelun, stailauksen ja kuvaajan yhteistyön, asunnon myyntistailauksen, liikkuvan kuvan stailauksen, stailauksen sosiaaliseen mediaan, mainoskuvien stailauksen, tapahtumien stailauksen, kodin stailauksen sekä ammattijärjestämisen.
+      </p>
+      <p>
+        Työskentelyni perustuu visuaaliseen silmään, yksityiskohtien huolellisuuteen ja asiakkaan tarpeiden kuuntelemiseen. Tavoitteenani on luoda tiloja, jotka ovat kauniita, toimivia ja harmonisia – ympäristöjä, joissa on hyvä olla.
       </p>
     </div>
+  </section>
+</main>
 
-    <section id="contact" class="text-center">
-      <h2>Ota yhteyttä</h2>
-      <form class="mx-auto" style="max-width: 300px">
-        <label for="name">Nimesi</label>
-        <input type="text" id="name" name="name" class="form-control mb-2" />
-
-        <label for="email">Sähköpostiosoite</label>
-        <input type="email" id="email" name="email" class="form-control mb-2" />
-      </form>
-    </section>
-
-    <footer class="text-center py-3 mt-4">
-
- 
-        <p class="intro-text">
-    Sisustuskonsultaatiot ja sisustussuunnittelut Vantaa, Helsinki, Espoo, Kauniainen, Kerava, Kirkkonummi, Nurmijärvi ja Porvoo. 
-      </p> 
-  <div class="sosiaalinen-media">
-      <a class="instagram-link" href="https://www.instagram.com/interiorbymette/">
-        Instagram
-      </a>
+<footer>
+    <p>&copy; 2025 Mette Holmström - InteriorByMette</p>
+    <p class="intro-text">
+        Sisustuskonsultaatiot ja sisustussuunnittelut Vantaa, Helsinki, Espoo, Kauniainen, Kerava, Kirkkonummi, Nurmijärvi ja Porvoo.
+    </p>
+    <div class="sosiaalinen-media">
+        <a href="https://www.instagram.com/interiorbymette/">Instagram</a>
     </div>
-<p>&copy; 2025 Mette Holmström InteriorByMette</p>   
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </footer>
+</footer>
 </body>
 </html>
+

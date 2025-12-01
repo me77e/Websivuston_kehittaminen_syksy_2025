@@ -7,58 +7,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Logo -->
-        <img src="images/logo.jpg" alt="Logo" class="logo-img">
+<header class="header">
+    <img src="images/logo.jpg" alt="Logo" class="logo-img">
 
-        <!-- Navigointi heti logon jälkeen -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="Palvelut.html">Palvelut</a></li>
-                <li><a href="Referenssit.html">Referenssit</a></li>
-                <li><a href="Otayhteytta.html">Ota yhteyttä</a></li>
-            </ul>
-        </nav>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="Palvelut.html">Palvelut</a></li>
+            <li><a href="Referenssit.html">Referenssit</a></li>
+            <li><a href="Otayhteytta.html">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- Sivun sisältö -->
-        <div class="content">
-            <p class="highlight"><strong>Mitä sisustussuunnittelu on?</strong></p>
-            <p>
-                Sisustussuunnittelu on palvelu, joka auttaa luomaan toimivia, kauniita ja käyttäjien tarpeisiin sopivia tiloja. 
-                Se voi olla hyvin erilaajuista - kaikkea lyhyestä kertakonsultaatiosta laajaan, pitkäkestoiseen suunnitteluprojektiin. 
-                Sisustussuunnittelija voi toimia tukena niin pienissä muutoksissa kuin kokonaisen kodin tai uudiskohteen suunnittelussa alusta asti.
-            </p>
-            <p>
-                Ota yhteyttä, niin teen sinulle yksilöllisen tarjouksen toiveidesi ja projektisi laajuuden mukaan.
-            </p>
+<section class="intro-text-section">
+    <p class="intro-title"><strong>Mitä sisustussuunnittelu on?</strong></p>
+    <p class="intro-paragraph">
+        Sisustussuunnittelu auttaa luomaan toimivia, kauniita ja käyttäjän tarpeisiin sopivia tiloja. 
+        Se voi olla hyvin erilaajuista - lyhyestä kertakonsultaatiosta laajaan kokonaisprojektiin. 
+        Ota yhteyttä, niin teen sinulle yksilöllisen tarjouksen toiveidesi ja projektisi laajuuden mukaan.
+    </p>
+       <div class="video-container">
+        <video controls>
+            <source src="images/video2.MOV" type="video/mp4">
+        </video>
+    </div> 
+</section>
 
-<div class="image-text-grid d-flex flex-column flex-md-row align-items-start gap-4">
-    <!-- Kuva vasemmalla -->
-    <img src="images/kynttila.jpg" alt="sivukuva" class="sivukuva">
-
-    <!-- Ruudukko kuvan vieressä -->
-    <div class="grid-container flex-grow-1">
-        <div class="grid-item">Kertakonsultaatio</div>
-        <div class="grid-item">Yksittäisen huoneen sisustussuunnittelu</div>
-        <div class="grid-item">Värianalyysi</div>
-        <div class="grid-item">Mittatarkka suunnittelu</div>
-        <div class="grid-item">Laaja uudiskohteen kokonaissuunnittelu</div>
-    </div>
-</div>
-
-    </header>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Mette Holmström - InteriorByMette</p>
-        <p class="intro-text">
-            Sisustuskonsultaatiot ja sisustussuunnittelut Vantaa, Helsinki, Espoo, Kauniainen, Kerava, Kirkkonummi, Nurmijärvi ja Porvoo.
-        </p>
-        <div class="sosiaalinen-media">
-            <a class="instagram-link" href="https://www.instagram.com/interiorbymette/">Instagram</a>
+    <section class="services">
+        <h2>Palveluni</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="images/suunnittelu.jpg" alt="Kertakonsultaatio">
+                <p>Kertakonsultaatio</p>
+            </div>
+            <div class="service-item">
+                <img src="images/varianalyysi.jpg" alt="Värianalyysi">
+                <p>Värianalyysi/värikonsultaatio</p>
+            </div>
+            <div class="service-item">
+                <img src="images/projekti.jpg" alt="Kokonaissuunnittelu">
+                <p>Avaimet käteen-tyyli</p>
+            </div>
         </div>
-    </footer>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mette Holmström - InteriorByMette</p>
+    <p class="intro-text">
+        Sisustuskonsultaatiot ja sisustussuunnittelut Vantaa, Helsinki, Espoo, Kauniainen, Kerava, Kirkkonummi, Nurmijärvi ja Porvoo.
+    </p>
+    <div class="sosiaalinen-media">
+        <a href="https://www.instagram.com/interiorbymette/">Instagram</a>
+    </div>
+</footer>
 </body>
 </html>
 
