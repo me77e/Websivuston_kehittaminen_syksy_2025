@@ -249,10 +249,21 @@ footer {
     }
 }
 .single2-image .bedroom-img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     
 }
+.image-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* väli ikonin ja kuvan väliin */
+}
+
+.image-with-icon i {
+    font-size: 30px;  /* säädä ikonin koko */
+    cursor: pointer;  /* jos haluat pointerin */
+}
+
 
 
 
