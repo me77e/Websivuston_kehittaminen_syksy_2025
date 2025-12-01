@@ -248,17 +248,24 @@ footer {
         width: 90%;
     }
 }
-.single2-image .bedroom-img {
-    width: 500px;
-    height: 400px;
-    justify-items: left;
-    
+.single2-image {
+    display: flex;
+    align-items: center; /* keskittää pystysuunnassa */
+    gap: 20px;           /* väli kuvan ja tekstin välillä */
+    margin: 20px 0;
 }
+
 .single2-image .image-text {
-    max-width: 400px;    /* valinnainen */
-    font-size: 1.1rem;
-    line-height: 1.5;
+    max-width: 500px;    /* valinnainen */
+    font-size: 1.0rem;
+    line-height: 1.4;
 }
+.single2-image .bedroom-img {
+    width: 400px;
+    height: 300px;
+}
+
+
 
 
 
