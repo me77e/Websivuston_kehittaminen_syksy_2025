@@ -122,22 +122,28 @@ footer {
 .sivukuva {
     width: 250px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 20px;
+    flex-shrink: 0; /* EI kutistu */
 }
 .row .col {
     transition: transform 0.3s, background-color 0.3s;
 }
 .row .col:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color: #131212;
 }
+/* Responsiivisuus */
 @media (max-width: 768px) {
     .d-flex {
         flex-direction: column !important;
         align-items: center !important;
     }
+
+    .sivukuva {
+        margin-bottom: 20px;
+    }
+}
 
 
 
