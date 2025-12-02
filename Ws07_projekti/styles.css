@@ -444,6 +444,20 @@ footer a:hover {
     }
 }
 
+.etusivu-img {
+  width: 100%;
+  max-width: 300px;     /* säädä haluamasi maksikoko */
+  border-radius: 15px;  /* pyöristetyt kulmat */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.etusivu-img:hover {
+  transform: scale(1.05);                /* zoom hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* varjo hover */
+}
+
+
 
 
 
