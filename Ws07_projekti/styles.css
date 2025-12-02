@@ -1,4 +1,4 @@
-/* ================== YLEISET ================== */
+
 body {
     background-color: rgb(192, 187, 187);
     font-family: "Times New Roman", Times, serif;
@@ -17,7 +17,7 @@ p {
     margin: 0 0 15px 0;
 }
 
-/* ================== HEADER JA NAV ================== */
+
 .header {
     position: relative;
     padding-top: 20px;
@@ -54,7 +54,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* ================== NAVIGATIO ================== */
+
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -77,7 +77,7 @@ p {
 }
 
 
-/* ================== FOOTER ================== */
+
 footer {
     background-color: grey;
     color: black;
@@ -95,7 +95,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ================== KUVARIVIT ================== */
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
@@ -121,9 +121,9 @@ footer a:hover {
     width: 22%;
 }
 
-/* ================== YKSITTÄISET KUVAT ==================*
 
-/* Navigaation linkit */
+
+
 .main-nav a {
     text-decoration: none;
     color: #333;
@@ -136,10 +136,10 @@ footer a:hover {
 .main-nav a:focus,
 .main-nav a:active {
     color: #0a0a0a;
-    transform: scale(1.05); /* pientä suurennusta hoverilla */
+    transform: scale(1.05); 
 }
 
-/* Ruudukon elementit */
+
 .grid-item {
     padding: 10px;
     background-color: #f5f5f5;
@@ -156,7 +156,7 @@ footer a:hover {
     background-color: #e0e0e0;
 }
 
-/* Responsiivisuus mobiilissa */
+
 @media (max-width: 768px) {
     .main-nav ul {
         flex-direction: column;
@@ -169,28 +169,28 @@ footer a:hover {
     }
 
     .grid-item {
-        width: 90%;  /* helpompi klikata mobiilissa */
+        width: 90%;  
         margin: 0 auto 10px auto;
     }
 }
-/* ================== YHTEYSKUVA JA TEKSTI ================== */
+
 .contact-section {
-    display: flex;                 /* Rivittyy vaakasuoraan */
-    align-items: center;           /* Keskittää pystysuunnassa */
-    justify-content: center;       /* Keskittää vaakasuunnassa */
-    gap: 30px;                     /* Etäisyys kuvan ja tekstin välillä */
-    background-color: rgb(192, 187, 187); /* sama kuin body */
+    display: flex;              
+    align-items: center;          
+    justify-content: center;      
+    gap: 30px;                 
+    background-color: rgb(192, 187, 187); 
     padding: 20px;
     border-radius: 10px;
-    flex-wrap: wrap;               /* Pienillä näytöillä rivittyy alle */
+    flex-wrap: wrap;              
 }
 
 .contact-img {
-    width: 250px;      /* Kuvaa voi säätää halutuksi */
+    width: 250px;      
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-    flex-shrink: 0;    /* Ei kutistu liian pieneksi */
+    flex-shrink: 0;    
 }
 
 .contact-info {
@@ -202,7 +202,7 @@ footer a:hover {
 
 .contact-info p {
     margin: 5px 0;
-    font-size: 1.1rem; /* Tekstin koko */
+    font-size: 1.1rem; 
 }
 
 .contact-name {
@@ -215,10 +215,10 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
-/* Responsiivisuus mobiilissa */
+
 @media (max-width: 768px) {
     .contact-section {
-        flex-direction: column;  /* Rivittyy alle pienillä näytöillä */
+        flex-direction: column;  
         text-align: center;
     }
 
@@ -227,21 +227,21 @@ footer a:hover {
     }
 
     .contact-img {
-        width: 200px;           /* Pienempi mobiilissa */
+        width: 200px;         
     }
 }
-/* ================== YHTEYDENOTTOLomake ================== */
+
 #contact {
     display: flex;
     flex-direction: column;
-    align-items: center;       /* Keskittää koko sektion vaakasuunnassa */
-    justify-content: center;   /* Keskittää pystysuunnassa */
-    background-color: rgb(230, 230, 230); /* Vaaleampi tausta erottumaan */
+    align-items: center;       
+    justify-content: center;  
+    background-color: rgb(230, 230, 230); 
     padding: 30px;
     border-radius: 15px;
-    max-width: 500px;          /* Lomakkeen maksimileveys */
-    margin: 40px auto;         /* Keskittää sivulle ja lisää ylä- ja alavälin */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Hieman varjoa */
+    max-width: 500px;         
+    margin: 40px auto;        
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
 }
 
 #contact h2 {
@@ -264,10 +264,10 @@ footer a:hover {
     box-sizing: border-box;
 }
 
-/* Responsiivisuus mobiilissa */
+
 @media (max-width: 768px) {
     #contact {
-        width: 90%;             /* Käytetään suurin osa ruudusta */
+        width: 90%;           
         padding: 20px;
     }
 
@@ -279,21 +279,21 @@ footer a:hover {
         font-size: 1rem;
     }
 }
-/* ================== Kuka Mette on -osio ================== */
+
 .about-hero {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     padding: 40px 20px;
-    background-color: rgb(192, 187, 187); /* sama kuin body */
-    flex-wrap: wrap; /* mobiilissa pinoutuu päällekkäin */
+    background-color: rgb(192, 187, 187); 
+    flex-wrap: wrap; 
 }
 
 .about-img {
-    width: 250px; /* pienempi kuva */
+    width: 250px; 
     height: auto;
-    border-radius: 15px; /* pyöristetyt reunat */
+    border-radius: 15px; 
     flex-shrink: 0;
 }
 
@@ -308,7 +308,7 @@ footer a:hover {
     margin-bottom: 15px;
 }
 
-/* Responsiivisuus mobiilissa */
+
 @media (max-width: 768px) {
     .about-hero {
         flex-direction: column;
@@ -329,11 +329,11 @@ footer a:hover {
         font-size: 1.5rem;
     }
 }
-/* ================== PALVELUT ================== */
+
 .services {
     padding: 40px 20px;
     text-align: center;
-    background-color: rgb(192, 187, 187); /* sama kuin body */
+    background-color: rgb(192, 187, 187); 
 }
 
 .services h2 {
@@ -376,7 +376,7 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
-/* Responsiivisuus */
+
 @media (max-width: 768px) {
     .service-grid {
         flex-direction: column;
@@ -391,12 +391,12 @@ footer a:hover {
 .intro-text-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Keskittää kaiken vaakasuunnassa */
-    justify-content: center; /* Keskittää pystysuunnassa, jos haluat korkeuden */
-    max-width: 800px; /* Maksimileveys, jotta teksti ei veny liian leveäksi */
-    margin: 40px auto; /* Keskittää kokonaan sivulle */
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 40px auto; 
     padding: 20px;
-    text-align: center; /* Tekstien keskitys */
+    text-align: center; 
 }
 
 .intro-title {
@@ -406,11 +406,11 @@ footer a:hover {
 
 .intro-paragraph {
     font-size: 1.2rem;
-    line-height: 1.8; /* Parantaa luettavuutta */
+    line-height: 1.8; 
 }
 .intro-video-section {
-    max-width: 900px;   /* Leveys sivun keskelle */
-    margin: 40px auto;  /* Keskittää sivulle ja lisää ylä- ja alavälin */
+    max-width: 900px;   
+    margin: 40px auto;  
     text-align: center;
 }
 
@@ -426,18 +426,18 @@ footer a:hover {
 }
 
 .video-container {
-    width: 100%;           /* Täyttää koko sivun leveyden */
-    max-width: 300px;      /* Voit muuttaa haluamaksesi enimmäisleveydeksi */
-    margin: 0 auto;        /* Keskittää videon sivulle */
+    width: 100%;         
+    max-width: 300px;     
+    margin: 0 auto;       
 }
 
 .video-container video {
-    width: 100%;           /* Video venyy kontainerin leveyteen */
-    height: auto;          /* Pitää mittasuhteet oikeina */
-    border-radius: 10px;   /* Pyöristetyt kulmat */
+    width: 100%;           
+    height: auto;          
+    border-radius: 10px;   
 }
 
-/* Responsiivisuus mobiilille */
+
 @media (max-width: 768px) {
     .video-container video {
         max-height: 250px;
@@ -446,15 +446,15 @@ footer a:hover {
 
 .etusivu-img {
   width: 100%;
-  max-width: 300px;     /* säädä haluamasi maksikoko */
-  border-radius: 15px;  /* pyöristetyt kulmat */
+  max-width: 300px;    
+  border-radius: 15px;  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .etusivu-img:hover {
-  transform: scale(1.05);                /* zoom hover */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* varjo hover */
+  transform: scale(1.05);                
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
 }
 
 
