@@ -134,8 +134,8 @@ footer a:hover {
 
 .main-nav a:hover,
 .main-nav a:focus,
-.main-nav a:active {
-    color: #0a0a0a;
+.main-nav li a.active {
+    color: #faf8f8;
     transform: scale(1.05); 
 }
 
@@ -456,10 +456,7 @@ footer a:hover {
   transform: scale(1.05);                
   box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
 }
-.main-nav a.active {
-    color: #fcf9f9;
-    text-decoration: underline;
-}
+
 
 
 
